@@ -1,0 +1,121 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/intelprojektit/laskin/simulation/modelsim
+T_opt
+!s110 1725272720
+VXl9OacAmRVzeAgiDYOb]M1
+Z2 04 19 16 work vk1t2laskin_vhd_tst vk1t2laskin_arch 1
+=2-d8bbc125fe7b-66d5928f-3da-3da8
+Z3 !s124 OEM10U2 
+Z4 o-quiet -auto_acc_if_foreign -work work +acc
+Z5 tCvgOpt 0
+n@_opt
+Z6 OL;O;2021.2;73
+R1
+T_opt1
+!s110 1727251647
+VEGFB;ib3ISc45M]BXK0EQ1
+R2
+=2-d8bbc125fe7b-66f3c4bf-1b1-13b4
+R3
+R4
+R5
+n@_opt1
+R6
+Evk1t2laskin
+Z7 w1727250042
+Z8 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z9 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z10 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 2
+R1
+Z11 8C:/intelprojektit/laskin/vk1t2laskin.vhd
+Z12 FC:/intelprojektit/laskin/vk1t2laskin.vhd
+l0
+L5 1
+V[>J:g`_l]hZRn=h]dN[F`2
+!s100 Il8X]c=mAPO4@0a82_VGQ3
+Z13 OL;C;2021.2;73
+31
+Z14 !s110 1727251628
+!i10b 1
+Z15 !s108 1727251628.000000
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/intelprojektit/laskin/vk1t2laskin.vhd|
+Z17 !s107 C:/intelprojektit/laskin/vk1t2laskin.vhd|
+!i113 0
+Z18 o-93 -work work
+Z19 tExplicit 1 CvgOpt 0
+Artl
+R8
+R9
+R10
+DEx4 work 11 vk1t2laskin 0 22 [>J:g`_l]hZRn=h]dN[F`2
+!i122 2
+l17
+L15 11
+V_XSmY1Wh7cBUbTGLoI[772
+!s100 T=9BK66c];GADL9KA>T:Q3
+R13
+31
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 0
+R18
+R19
+Evk1t2laskin_vhd_tst
+Z20 w1727249910
+R9
+R10
+!i122 3
+R1
+Z21 8C:/intelprojektit/laskin/simulation/modelsim/vk1t2laskin.vht
+Z22 FC:/intelprojektit/laskin/simulation/modelsim/vk1t2laskin.vht
+l0
+L31 1
+V[hUL]g2zQO>2OOT;[;oWY1
+!s100 Ql41Gj=A;AWR_N0cBn6^G3
+R13
+31
+R14
+!i10b 1
+R15
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/intelprojektit/laskin/simulation/modelsim/vk1t2laskin.vht|
+Z24 !s107 C:/intelprojektit/laskin/simulation/modelsim/vk1t2laskin.vht|
+!i113 0
+R18
+R19
+Avk1t2laskin_arch
+R9
+R10
+DEx4 work 19 vk1t2laskin_vhd_tst 0 22 [hUL]g2zQO>2OOT;[;oWY1
+!i122 3
+l48
+L33 56
+Vm`jWKJ3J2hl<PE`Eg=90:3
+!s100 d4=ElLG<lP`YPbAkNUH`I2
+R13
+31
+R14
+!i10b 1
+R15
+R23
+R24
+!i113 0
+R18
+R19

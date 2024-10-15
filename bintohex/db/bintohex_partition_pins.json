@@ -1,0 +1,57 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "hex[7]",
+					"strict" : false
+				},
+				{
+					"name" : "hex[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hex[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hex[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hex[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hex[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hex[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hex[0]",
+					"strict" : false
+				},
+				{
+					"name" : "tavu[1]",
+					"strict" : false
+				},
+				{
+					"name" : "tavu[2]",
+					"strict" : false
+				},
+				{
+					"name" : "tavu[3]",
+					"strict" : false
+				},
+				{
+					"name" : "tavu[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

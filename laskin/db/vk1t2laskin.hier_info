@@ -1,0 +1,28 @@
+|vk1t2laskin
+tavu1[0] => Add0.IN4
+tavu1[0] => xor_out.IN0
+tavu1[1] => Add0.IN3
+tavu1[1] => xor_out.IN0
+tavu1[2] => Add0.IN2
+tavu1[2] => xor_out.IN0
+tavu1[3] => Add0.IN1
+tavu1[3] => xor_out.IN0
+tavu2[0] => Add0.IN8
+tavu2[0] => xor_out.IN1
+tavu2[1] => Add0.IN7
+tavu2[1] => xor_out.IN1
+tavu2[2] => Add0.IN6
+tavu2[2] => xor_out.IN1
+tavu2[3] => Add0.IN5
+tavu2[3] => xor_out.IN1
+sum_out[0] << Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum_out[1] << Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum_out[2] << Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum_out[3] << Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum_out[4] << Add0.DB_MAX_OUTPUT_PORT_TYPE
+xor_out[0] << xor_out.DB_MAX_OUTPUT_PORT_TYPE
+xor_out[1] << xor_out.DB_MAX_OUTPUT_PORT_TYPE
+xor_out[2] << xor_out.DB_MAX_OUTPUT_PORT_TYPE
+xor_out[3] << xor_out.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,81 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "sin_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sin_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sin_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sin_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sin_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "sin_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "sin_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "sin_out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "tuningword[0]",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "tuningword[6]",
+					"strict" : false
+				},
+				{
+					"name" : "tuningword[5]",
+					"strict" : false
+				},
+				{
+					"name" : "tuningword[4]",
+					"strict" : false
+				},
+				{
+					"name" : "tuningword[3]",
+					"strict" : false
+				},
+				{
+					"name" : "tuningword[2]",
+					"strict" : false
+				},
+				{
+					"name" : "tuningword[1]",
+					"strict" : false
+				},
+				{
+					"name" : "tuningword[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

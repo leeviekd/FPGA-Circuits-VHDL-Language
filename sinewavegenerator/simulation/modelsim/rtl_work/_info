@@ -1,0 +1,109 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelprojektit/sinewavegenerator/simulation/modelsim
+T_opt
+!s110 1728636118
+VzL]]1;lDNEOL:g`8^2zc=0
+04 20 10 work tb_sinewavegenerator behavioral 1
+=2-d8bbc125fe7b-6708e4d5-3c2-1a3c
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+Esinewavegenerator
+Z1 w1728634810
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 2
+R0
+Z5 8C:/intelprojektit/sinewavegenerator/sinewavegenerator.vhd
+Z6 FC:/intelprojektit/sinewavegenerator/sinewavegenerator.vhd
+l0
+L5 1
+Vliidd8Nh0GECOPA;G6_140
+!s100 djFAVEV5SCAk:cUlg3K492
+Z7 OL;C;2021.2;73
+31
+Z8 !s110 1728636114
+!i10b 1
+Z9 !s108 1728636114.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/intelprojektit/sinewavegenerator/sinewavegenerator.vhd|
+Z11 !s107 C:/intelprojektit/sinewavegenerator/sinewavegenerator.vhd|
+!i113 0
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Artl
+R2
+R3
+R4
+Z14 DEx4 work 17 sinewavegenerator 0 22 liidd8Nh0GECOPA;G6_140
+!i122 2
+l1048
+L14 1060
+VG>RkdkFN3dW2XagzTL=[:2
+!s100 bQilY;4Z=^hfAdglR6=Xo0
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Etb_sinewavegenerator
+Z15 w1728636048
+R2
+R3
+R4
+!i122 3
+R0
+Z16 8C:/intelprojektit/sinewavegenerator/simulation/modelsim/sinewavegenerator.vht
+Z17 FC:/intelprojektit/sinewavegenerator/simulation/modelsim/sinewavegenerator.vht
+l0
+L5 1
+V>?3h3iW44XZ9fa@Xd<DQ11
+!s100 k7dUzL6V2hB^S0?M<F]@41
+R7
+31
+R8
+!i10b 1
+R9
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/intelprojektit/sinewavegenerator/simulation/modelsim/sinewavegenerator.vht|
+Z19 !s107 C:/intelprojektit/sinewavegenerator/simulation/modelsim/sinewavegenerator.vht|
+!i113 0
+R12
+R13
+Abehavioral
+R14
+R2
+R3
+R4
+DEx4 work 20 tb_sinewavegenerator 0 22 >?3h3iW44XZ9fa@Xd<DQ11
+!i122 3
+l19
+L8 62
+V3n>l`D?Qcz_oUBUzodCmH2
+!s100 COE[eA7Wh9Bk@^IYHbA1`0
+R7
+31
+R8
+!i10b 1
+R9
+R18
+R19
+!i113 0
+R12
+R13

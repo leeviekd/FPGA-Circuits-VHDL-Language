@@ -1,0 +1,8 @@
+|multiplexer
+SW[0] => Mux0.IN4
+SW[1] => Mux0.IN3
+BTN => Mux0.IN5
+BTN => Mux0.IN2
+LED << Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,72 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2021.2 win64 Apr 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do vk2mux_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is Leevi@DESKTOP-0ACAUUQ.
+# vlib rtl_work
+# ** Warning: (vlib-34) Library already exists at "rtl_work".
+# Errors: 0, Warnings: 1
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/21.1/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/intelprojektit/vk2mux/vk2mux.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 16:36:18 on Sep 09,2024
+# vcom -reportprogress 300 -93 -work work C:/intelprojektit/vk2mux/vk2mux.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity vk2mux
+# -- Compiling architecture behavior of vk2mux
+# End time: 16:36:18 on Sep 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vcom -93 -work work C:/intelprojektit/vk2mux/vk2mux.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 16:36:32 on Sep 09,2024
+# vcom -reportprogress 300 -93 -work work C:/intelprojektit/vk2mux/vk2mux.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity vk2mux
+# -- Compiling architecture behavior of vk2mux
+# End time: 16:36:32 on Sep 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work._opt
+# vsim -voptargs="+acc" work._opt 
+# Start time: 16:37:35 on Sep 09,2024
+# ** Warning: (vsim-1963) Explicit invocation on automatically named optimized design "_opt" will not cause it to be locked.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.vk2mux(behavior)#1
+add wave  \
+sim:/vk2mux/BTN \
+sim:/vk2mux/LED \
+sim:/vk2mux/SW
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Leevi  Hostname: DESKTOP-0ACAUUQ  ProcessID: 1184
+#           Attempting to use alternate WLF file "./wlftwm6fxr".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftwm6fxr
+run
+# End time: 16:38:26 on Sep 09,2024, Elapsed time: 0:00:51
+# Errors: 0, Warnings: 3

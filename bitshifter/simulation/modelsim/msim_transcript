@@ -1,0 +1,124 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2021.2 win64 Apr 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do bitshifter_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is Leevi@DESKTOP-0ACAUUQ.
+# vlib rtl_work
+# ** Warning: (vlib-34) Library already exists at "rtl_work".
+# Errors: 0, Warnings: 1
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/21.1/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/intelprojektit/bitshifter/bitshifter.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:07:25 on Sep 24,2024
+# vcom -reportprogress 300 -93 -work work C:/intelprojektit/bitshifter/bitshifter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pisoconverter
+# -- Compiling architecture rtl of pisoconverter
+# End time: 21:07:25 on Sep 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/intelprojektit/bitshifter/simulation/modelsim/pisoconverter.vht}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:07:25 on Sep 24,2024
+# vcom -reportprogress 300 -93 -work work C:/intelprojektit/bitshifter/simulation/modelsim/pisoconverter.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity pisoconverter_vhd_tst
+# -- Compiling architecture pisoconverter_arch of pisoconverter_vhd_tst
+# End time: 21:07:25 on Sep 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  pisoconverter_tb
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" pisoconverter_tb 
+# Start time: 21:07:25 on Sep 24,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: (vopt-13130) Failed to find design unit pisoconverter_tb.
+#         Searched libraries:
+#             altera
+#             lpm
+#             sgate
+#             altera_mf
+#             altera_lnsim
+#             fiftyfivenm
+#             rtl_work
+#             work
+#             work
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./bitshifter_run_msim_rtl_vhdl.do PAUSED at line 12
+vcom -93 -work work C:/intelprojektit/bitshifter/bitshifter.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:07:32 on Sep 24,2024
+# vcom -reportprogress 300 -93 -work work C:/intelprojektit/bitshifter/bitshifter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pisoconverter
+# -- Compiling architecture rtl of pisoconverter
+# End time: 21:07:32 on Sep 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -93 -work work C:/intelprojektit/bitshifter/simulation/modelsim/pisoconverter.vht
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:07:32 on Sep 24,2024
+# vcom -reportprogress 300 -93 -work work C:/intelprojektit/bitshifter/simulation/modelsim/pisoconverter.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity pisoconverter_vhd_tst
+# -- Compiling architecture pisoconverter_arch of pisoconverter_vhd_tst
+# End time: 21:07:32 on Sep 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.pisoconverter_vhd_tst
+# vsim -voptargs="+acc" work.pisoconverter_vhd_tst 
+# Start time: 21:07:25 on Sep 24,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.pisoconverter_vhd_tst(pisoconverter_arch)#1
+# Loading ieee.numeric_std(body)
+# Loading work.pisoconverter(rtl)#1
+add wave -position end  sim:/pisoconverter_vhd_tst/clk
+add wave -position end  sim:/pisoconverter_vhd_tst/CLK_PERIOD
+add wave -position end  sim:/pisoconverter_vhd_tst/done
+add wave -position end  sim:/pisoconverter_vhd_tst/parallel_in
+add wave -position end  sim:/pisoconverter_vhd_tst/rst
+add wave -position end  sim:/pisoconverter_vhd_tst/serial_out
+add wave -position end  sim:/pisoconverter_vhd_tst/start
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Leevi  Hostname: DESKTOP-0ACAUUQ  ProcessID: 8916
+#           Attempting to use alternate WLF file "./wlfts0d37x".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfts0d37x
+run
+# Causality operation skipped due to absence of debug database file
+# End time: 21:19:15 on Sep 24,2024, Elapsed time: 0:11:50
+# Errors: 1, Warnings: 2

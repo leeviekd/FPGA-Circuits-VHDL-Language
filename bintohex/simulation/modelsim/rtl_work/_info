@@ -1,0 +1,106 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelprojektit/bintohex/simulation/modelsim
+T_opt
+!s110 1726160215
+VDgG[@NTR2T`3khn4WT=XY0
+04 16 13 work bintohex_vhd_tst bintohex_arch 1
+=2-d8bbc125fe7b-66e31d57-208-1af8
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+Ebintohex
+Z1 w1726159627
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 2
+R0
+Z5 8C:/intelprojektit/bintohex/bintohex.vhd
+Z6 FC:/intelprojektit/bintohex/bintohex.vhd
+l0
+L5 1
+VaDiT?0ScmABI3Zj2S;^`j2
+!s100 BCcXAdV7Cm?7F;2W6[b<M2
+Z7 OL;C;2021.2;73
+31
+Z8 !s110 1726160212
+!i10b 1
+Z9 !s108 1726160212.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/intelprojektit/bintohex/bintohex.vhd|
+Z11 !s107 C:/intelprojektit/bintohex/bintohex.vhd|
+!i113 0
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Artl
+R2
+R3
+R4
+DEx4 work 8 bintohex 0 22 aDiT?0ScmABI3Zj2S;^`j2
+!i122 2
+l13
+L12 42
+VTWj@^6[=O]D8;8RBna19m1
+!s100 ^9F2:H0Qj:cNA1`iE;eIa0
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Ebintohex_vhd_tst
+Z14 w1726160131
+R3
+R4
+!i122 3
+R0
+Z15 8C:/intelprojektit/bintohex/simulation/modelsim/bintohex.vht
+Z16 FC:/intelprojektit/bintohex/simulation/modelsim/bintohex.vht
+l0
+L4 1
+VPU:<g^D>NBjYFo5@KZoH>3
+!s100 LQkPm2@F>gQW87V[aHCb>1
+R7
+31
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/intelprojektit/bintohex/simulation/modelsim/bintohex.vht|
+Z18 !s107 C:/intelprojektit/bintohex/simulation/modelsim/bintohex.vht|
+!i113 0
+R12
+R13
+Abintohex_arch
+R3
+R4
+DEx4 work 16 bintohex_vhd_tst 0 22 PU:<g^D>NBjYFo5@KZoH>3
+!i122 3
+l17
+L6 67
+VSWUCb?:XFkc9zP_ZcSknZ3
+!s100 J5?HQP6MhbIfD4b9Y_Oig3
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 0
+R12
+R13

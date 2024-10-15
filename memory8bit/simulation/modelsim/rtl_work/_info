@@ -1,0 +1,106 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelprojektit/memory8bit/simulation/modelsim
+T_opt
+!s110 1727451959
+VFaFM>6e_DQ:2=V>lhR5U;0
+04 15 12 work mem8bit_vhd_tst mem8bit_arch 1
+=2-d8bbc125fe7b-66f6d337-1e8-35a8
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+Emem8bit
+Z1 w1727447740
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 2
+R0
+Z5 8C:/intelprojektit/memory8bit/mem8bit.vhd
+Z6 FC:/intelprojektit/memory8bit/mem8bit.vhd
+l0
+L5 1
+V0ejO`HUPzC:WO;]^j9G;I3
+!s100 Cb730>`AMe[GcBTfjRZG00
+Z7 OL;C;2021.2;73
+31
+Z8 !s110 1727451953
+!i10b 1
+Z9 !s108 1727451953.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/intelprojektit/memory8bit/mem8bit.vhd|
+Z11 !s107 C:/intelprojektit/memory8bit/mem8bit.vhd|
+!i113 0
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Artl
+R2
+R3
+R4
+DEx4 work 7 mem8bit 0 22 0ejO`HUPzC:WO;]^j9G;I3
+!i122 2
+l21
+L16 23
+V=goFfAk7[TOAoQ8i0dhDK3
+!s100 ?e5cKYmaoP^VHPBNZ7jc>2
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Emem8bit_vhd_tst
+Z14 w1727451876
+R3
+R4
+!i122 3
+R0
+Z15 8C:/intelprojektit/memory8bit/simulation/modelsim/mem8bit.vht
+Z16 FC:/intelprojektit/memory8bit/simulation/modelsim/mem8bit.vht
+l0
+L4 1
+V>D@KCil@Fiz3Kb7KeQOX63
+!s100 h>]D1zEj1Um@aeR;YP`3K0
+R7
+31
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/intelprojektit/memory8bit/simulation/modelsim/mem8bit.vht|
+Z18 !s107 C:/intelprojektit/memory8bit/simulation/modelsim/mem8bit.vht|
+!i113 0
+R12
+R13
+Amem8bit_arch
+R3
+R4
+DEx4 work 15 mem8bit_vhd_tst 0 22 >D@KCil@Fiz3Kb7KeQOX63
+!i122 3
+l28
+L6 97
+V_kA:odXbb=CX__;XGPek40
+!s100 RgGRi:RkhT0JASBJLTY3h1
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 0
+R12
+R13

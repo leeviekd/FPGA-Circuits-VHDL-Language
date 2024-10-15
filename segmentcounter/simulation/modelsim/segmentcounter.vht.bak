@@ -1,0 +1,80 @@
+-- Copyright (C) 2022  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions 
+-- and other software and tools, and any partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Intel Program License 
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel FPGA IP License Agreement, or other applicable license
+-- agreement, including, without limitation, that your use is for
+-- the sole purpose of programming logic devices manufactured by
+-- Intel and sold by Intel or its authorized distributors.  Please
+-- refer to the applicable agreement for further details, at
+-- https://fpgasoftware.intel.com/eula.
+
+-- ***************************************************************************
+-- This file contains a Vhdl test bench template that is freely editable to   
+-- suit user's needs .Comments are provided in each section to help the user  
+-- fill out necessary details.                                                
+-- ***************************************************************************
+-- Generated on "09/13/2024 15:31:47"
+                                                            
+-- Vhdl Test Bench template for design  :  segmentcounter
+-- 
+-- Simulation tool : Questa Intel FPGA (VHDL)
+-- 
+
+LIBRARY ieee;                                               
+USE ieee.std_logic_1164.all;                                
+
+ENTITY segmentcounter_vhd_tst IS
+END segmentcounter_vhd_tst;
+ARCHITECTURE segmentcounter_arch OF segmentcounter_vhd_tst IS
+-- constants                                                 
+-- signals                                                   
+SIGNAL clk : STD_LOGIC;
+SIGNAL reset : STD_LOGIC;
+SIGNAL run_led : STD_LOGIC;
+SIGNAL sec_display : STD_LOGIC_VECTOR(6 DOWNTO 0);
+SIGNAL start : STD_LOGIC;
+SIGNAL stop : STD_LOGIC;
+SIGNAL tens_display : STD_LOGIC_VECTOR(6 DOWNTO 0);
+COMPONENT segmentcounter
+	PORT (
+	clk : IN STD_LOGIC;
+	reset : IN STD_LOGIC;
+	run_led : OUT STD_LOGIC;
+	sec_display : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
+	start : IN STD_LOGIC;
+	stop : IN STD_LOGIC;
+	tens_display : OUT STD_LOGIC_VECTOR(6 DOWNTO 0)
+	);
+END COMPONENT;
+BEGIN
+	i1 : segmentcounter
+	PORT MAP (
+-- list connections between master ports and signals
+	clk => clk,
+	reset => reset,
+	run_led => run_led,
+	sec_display => sec_display,
+	start => start,
+	stop => stop,
+	tens_display => tens_display
+	);
+init : PROCESS                                               
+-- variable declarations                                     
+BEGIN                                                        
+        -- code that executes only once                      
+WAIT;                                                       
+END PROCESS init;                                           
+always : PROCESS                                              
+-- optional sensitivity list                                  
+-- (        )                                                 
+-- variable declarations                                      
+BEGIN                                                         
+        -- code executes for every event on sensitivity list  
+WAIT;                                                        
+END PROCESS always;                                          
+END segmentcounter_arch;

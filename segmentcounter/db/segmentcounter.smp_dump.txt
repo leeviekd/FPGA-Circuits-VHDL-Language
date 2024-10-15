@@ -1,0 +1,6 @@
+
+State Machine - |segmentcounter|state
+Name state.paused state.counting state.idle 
+state.idle 0 0 0 
+state.counting 0 1 1 
+state.paused 1 0 1 

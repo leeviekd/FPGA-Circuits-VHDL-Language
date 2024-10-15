@@ -1,0 +1,77 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "sum_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sum_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sum_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sum_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sum_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "xor_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "xor_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "xor_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "xor_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "tavu2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "tavu1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "tavu2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "tavu1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "tavu2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "tavu1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "tavu2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "tavu1[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

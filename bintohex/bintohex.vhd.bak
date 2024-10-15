@@ -1,0 +1,9 @@
+library ieee;
+use std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity bintohex is 
+	port (
+		tavu : in std_logic_vector(3 downto 0);
+	
+	);

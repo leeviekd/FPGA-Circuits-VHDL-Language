@@ -1,0 +1,141 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity segmentcounter is
+    port(
+        clk          : in std_logic;          
+        reset        : in std_logic;          -- SW1
+        start        : in std_logic;          -- Start KEY0
+        stop         : in std_logic;          -- Stop KEY1
+        sec_display  : out std_logic_vector(6 downto 0); -- 7-segment näyttö sekunneille
+        tens_display : out std_logic_vector(6 downto 0); -- 7-segment näyttö kymmenille sekunneille
+        run_led      : out std_logic          -- LED näyttää jos ajanotto on päällä
+    );
+end stopwatch;
+
+architecture behavioral of stopwatch is
+
+    -- Tilojen määrittely
+    type state_type is (idle, counting, paused);  -- Tilat: odottaa, laskee, tauolla
+    signal state, next_state : state_type;
+
+    -- Nappien debounce ja reunatunnistus
+    signal start_reg, stop_reg : std_logic := '0';  -- Start ja stop rekisterit
+    signal start_prev, stop_prev : std_logic := '0';  -- Edelliset arvot (debounce)
+
+    -- Ajastimen laskentasignaalit 
+    signal seconds    : integer range 0 to 59 := 0;  -- Sekunnit
+    signal clk_div    : integer := 0;  -- Kellon jakaja 
+    signal clk_1hz    : std_logic := '0';  -- 1Hz kello sekuntien laskentaan (Rotation alkaa)
+
+    -- 7-segment display dekooderi 
+    function to_7seg(input : integer) return std_logic_vector is
+    begin
+        case input is
+            when 0 => return "1000000"; -- Näytä 0
+            when 1 => return "1111001"; -- Näytä 1
+            when 2 => return "0100100"; -- Näytä 2
+            when 3 => return "0110000"; -- Näytä 3
+            when 4 => return "0011001"; -- Näytä 4
+            when 5 => return "0010010"; -- Näytä 5
+            when 6 => return "0000010"; -- Näytä 6
+            when 7 => return "1111000"; -- Näytä 7
+            when 8 => return "0000000"; -- Näytä 8
+            when 9 => return "0010000"; -- Näytä 9
+            when others => return "1111111"; -- Default (Kun olet lobbyssä)
+        end case;
+    end function;
+
+begin
+    -- Kellon jakaja (Matskua farmataan ja stormi kaventuu)
+    process(clk)
+    begin
+        if rising_edge(clk) then
+            if clk_div = 50000000 then  -- Jako 50 miljoonaa (stormin rotation IRL)
+                clk_div <= 0;
+                clk_1hz <= not clk_1hz;  -- 1Hz signaali sekunnin laskentaan
+            else
+                clk_div <= clk_div + 1;  -- Jatka matskufarmausta
+            end if;
+        end if;
+    end process;
+
+    -- Nappien debounce ja reunatunnistus (Varmista ettei duplikoi rakennuksia!)
+    process(clk)
+    begin
+        if rising_edge(clk) then
+            -- Tallenna start- ja stop-nappien edelliset arvot
+            start_prev <= start_reg;
+            stop_prev <= stop_reg;
+            
+            -- Yksinkertainen debouncing: rekisteröi start ja stop
+            start_reg <= start;
+            stop_reg <= stop;
+        end if;
+    end process;
+
+    -- Tilansiirtologiikka (Pelaajan liike kartalla)
+    process(clk)
+    begin
+        if rising_edge(clk) then
+            if reset = '1' then   -- Reset kun Respawn SW0 painetaan
+                state <= idle;    -- Respawn palaa odotustilaan (Circle sulkeutuu)
+            else
+                state <= next_state;
+            end if;
+        end if;
+    end process;
+
+    -- Seuraava tila logiikka (Launchpad käytössä tai kampataan)
+    process(state, start_reg, stop_reg, start_prev, stop_prev)
+    begin
+        case state is
+            when idle =>
+                if start_reg = '1' and start_prev = '0' then  -- Aloita kun Launchpad (KEY0) aktivoituu
+                    next_state <= counting;
+                else
+                    next_state <= idle;
+                end if;
+                
+            when counting =>
+                if stop_reg = '1' and stop_prev = '0' then    -- Stop kun kampataan (KEY1)
+                    next_state <= paused;
+                else
+                    next_state <= counting;
+                end if;
+                
+            when paused =>
+                if start_reg = '1' and start_prev = '0' then  -- Jatka peliä Launchpadillä (KEY0)
+                    next_state <= counting;
+                else
+                    next_state <= paused;
+                end if;
+                
+            when others =>
+                next_state <= idle;  -- Odotustila (Lobbyyn takaisin)
+        end case;
+    end process;
+
+    -- Sekuntien laskentalogiikka (Circle pienenee)
+    process(clk_1hz)
+    begin
+        if reset = '1' then
+            seconds <= 0;  -- Respawn (resettaa sekunnit)
+        elsif rising_edge(clk_1hz) then
+            if state = counting then
+                if seconds = 59 then
+                    seconds <= 0;  -- Kierretään takaisin 0:aan (Full rotation)
+                else
+                    seconds <= seconds + 1;  -- Lisää sekunti (Stormi lähenee)
+                end if;
+            end if;
+        end if;
+    end process;
+
+    -- 7-segment näyttö (Näytä Mini-shield ja Big-shield HUD:ssa)
+    sec_display <= to_7seg(seconds mod 10);  -- Yksiköt (Mini-shield)
+    tens_display <= to_7seg(seconds / 10);  -- Kymmenet (Big-shield)
+    run_led <= '1' when state = counting else '0';  -- Victory Royale valo päällä, kun ajanotto käynnissä
+    
+end behavioral;

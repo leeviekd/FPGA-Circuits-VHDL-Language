@@ -1,0 +1,66 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/intelprojektit/vk2mux/simulation/modelsim
+T_opt
+!s110 1725882801
+V`A=lEFzg8<Z8iR=b0SkEj2
+04 6 8 work vk2mux behavior 1
+=1-d8bbc125fe7b-66dee1b1-246-4a0
+!s124 OEM10U1 
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+R1
+Evk2mux
+Z2 w1725881875
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R1
+Z5 8C:/intelprojektit/vk2mux/vk2mux.vhd
+Z6 FC:/intelprojektit/vk2mux/vk2mux.vhd
+l0
+L5 1
+V@kmVj_A;SSz2OMc1>m>h:3
+!s100 2]X[aKEj^Yh^HzWfSIo?g3
+Z7 OL;C;2021.2;73
+31
+Z8 !s110 1725888992
+!i10b 1
+Z9 !s108 1725888992.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/intelprojektit/vk2mux/vk2mux.vhd|
+Z11 !s107 C:/intelprojektit/vk2mux/vk2mux.vhd|
+!i113 0
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Abehavior
+R3
+R4
+Z14 DEx4 work 6 vk2mux 0 22 @kmVj_A;SSz2OMc1>m>h:3
+!i122 1
+l14
+Z15 L13 13
+Z16 VOGNl5E6g>ZXhU0IzocNO73
+Z17 !s100 fme8WHg=CcE01[IV9Dh[R0
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13

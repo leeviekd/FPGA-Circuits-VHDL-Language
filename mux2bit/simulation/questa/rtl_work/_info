@@ -1,0 +1,104 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelprojektit/mux2bit/simulation/questa
+T_opt
+!s110 1725960658
+VN?[]dEL;725C:Tg9eh^IH1
+04 19 16 work multiplexer_vhd_tst multiplexer_arch 1
+=2-d8bbc125fe7b-66e011d2-73-3990
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+Emultiplexer
+Z1 w1725960543
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 2
+R0
+Z4 8C:/intelprojektit/mux2bit/multiplexer.vhd
+Z5 FC:/intelprojektit/mux2bit/multiplexer.vhd
+l0
+L4 1
+V`bCZbA3n[G]dRCl:7;6Z13
+!s100 2hZB1zIocG]<8F5bm5nBl0
+Z6 OL;C;2021.2;73
+31
+Z7 !s110 1725960654
+!i10b 1
+Z8 !s108 1725960654.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/intelprojektit/mux2bit/multiplexer.vhd|
+Z10 !s107 C:/intelprojektit/mux2bit/multiplexer.vhd|
+!i113 0
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Artl
+R2
+R3
+DEx4 work 11 multiplexer 0 22 `bCZbA3n[G]dRCl:7;6Z13
+!i122 2
+l14
+L12 10
+V0Y48nd?T`]O2`LLSnIhBM2
+!s100 XL]Nc>d:BDBZ]EYa?_I@P2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Emultiplexer_vhd_tst
+Z13 w1725960557
+R2
+R3
+!i122 3
+R0
+Z14 8C:/intelprojektit/mux2bit/simulation/modelsim/multiplexer.vht
+Z15 FC:/intelprojektit/mux2bit/simulation/modelsim/multiplexer.vht
+l0
+L4 1
+Vd1U2ZF^zW7HDOF9C0?97m1
+!s100 m`NST:Bo?E;U3Sk9jAF]f0
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/intelprojektit/mux2bit/simulation/modelsim/multiplexer.vht|
+Z17 !s107 C:/intelprojektit/mux2bit/simulation/modelsim/multiplexer.vht|
+!i113 0
+R11
+R12
+Amultiplexer_arch
+R2
+R3
+DEx4 work 19 multiplexer_vhd_tst 0 22 d1U2ZF^zW7HDOF9C0?97m1
+!i122 3
+l19
+L6 61
+VBnOH@jmM>KmADYL58fk:90
+!s100 am0iXMnQECAM=UOlUd_Nd0
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 0
+R11
+R12

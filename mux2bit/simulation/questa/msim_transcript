@@ -1,0 +1,109 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2021.2 win64 Apr 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do multiplexer_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/21.1/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/intelprojektit/mux2bit/multiplexer.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 12:30:42 on Sep 10,2024
+# vcom -reportprogress 300 -93 -work work C:/intelprojektit/mux2bit/multiplexer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity multiplexer
+# -- Compiling architecture rtl of multiplexer
+# End time: 12:30:42 on Sep 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/intelprojektit/mux2bit/simulation/modelsim/multiplexer.vht}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 12:30:43 on Sep 10,2024
+# vcom -reportprogress 300 -93 -work work C:/intelprojektit/mux2bit/simulation/modelsim/multiplexer.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity multiplexer_vhd_tst
+# -- Compiling architecture multiplexer_arch of multiplexer_vhd_tst
+# End time: 12:30:43 on Sep 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  multiplexer_tb
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" multiplexer_tb 
+# Start time: 12:30:43 on Sep 10,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: (vopt-13130) Failed to find design unit multiplexer_tb.
+#         Searched libraries:
+#             altera
+#             lpm
+#             sgate
+#             altera_mf
+#             altera_lnsim
+#             fiftyfivenm
+#             rtl_work
+#             work
+#             work
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./multiplexer_run_msim_rtl_vhdl.do PAUSED at line 12
+vcom -93 -work work C:/intelprojektit/mux2bit/multiplexer.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 12:30:54 on Sep 10,2024
+# vcom -reportprogress 300 -93 -work work C:/intelprojektit/mux2bit/multiplexer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity multiplexer
+# -- Compiling architecture rtl of multiplexer
+# End time: 12:30:54 on Sep 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -93 -work work C:/intelprojektit/mux2bit/simulation/modelsim/multiplexer.vht
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 12:30:54 on Sep 10,2024
+# vcom -reportprogress 300 -93 -work work C:/intelprojektit/mux2bit/simulation/modelsim/multiplexer.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity multiplexer_vhd_tst
+# -- Compiling architecture multiplexer_arch of multiplexer_vhd_tst
+# End time: 12:30:54 on Sep 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.multiplexer_vhd_tst
+# vsim -voptargs="+acc" work.multiplexer_vhd_tst 
+# Start time: 12:30:43 on Sep 10,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.multiplexer_vhd_tst(multiplexer_arch)#1
+# Loading work.multiplexer(rtl)#1
+add wave -position end  sim:/multiplexer_vhd_tst/BTN
+add wave -position end  sim:/multiplexer_vhd_tst/LED
+add wave -position end  sim:/multiplexer_vhd_tst/SW
+run
+# Causality operation skipped due to absence of debug database file
+# End time: 12:58:06 on Sep 10,2024, Elapsed time: 0:27:23
+# Errors: 1, Warnings: 0
